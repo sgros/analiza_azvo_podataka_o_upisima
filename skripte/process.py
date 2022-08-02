@@ -270,7 +270,15 @@ def _tagiraj_podatke(svi_podaci, kolona_za_tagiranje, datoteke_tagova = None, pr
 
     return svi_podaci
 
-def suma_kolona_po_tagovima_i_po_godinama(svi_podaci, kolona_za_statistiku = KOLONA_UPISNA_KVOTA, tagovi_studija = None, tagovi_izvodaca = None, tagovi_mjesta = None, tagovi_vrsta_nositelja = None, upisni_rok = 'l'):
+def suma_kolona_po_tagovima_i_po_godinama(svi_podaci,
+        kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+        tagovi_studija = None,
+        tagovi_izvodaca = None,
+        tagovi_mjesta = None,
+        tagovi_vrsta_nositelja = None,
+        upisni_rok = 'l',
+        xlabel = "Godina",
+        ylabel = ""):
     """
     Ova metoda prvo tagira podatke prema zadanim mapiranjima kroz
     argumente tagovi_*. Svaki argument tagira po nekoj koloni.
@@ -322,6 +330,8 @@ def suma_kolona_po_tagovima_i_po_godinama(svi_podaci, kolona_za_statistiku = KOL
         plt.bar(xvals, yvals)
         plt.plot(xvals, yvals, '-o', color='orange')
         plt.title(tag)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
         #plt.savefig(tag + "-" + upisni_rok + ".png")
         plt.show()
 
@@ -398,12 +408,13 @@ if __name__ == '__main__':
     #jedinstveni_izvodaci(svi_podaci, True)
     #jedinstveno_mjesto(svi_podaci, True)
     #jedinstvena_vrsta_nositelja(svi_podaci, True)
-#    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
-#            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
-##            tagovi_studija = [ "tag_po_studijima.csv" ],
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
+            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
 ##            tagovi_izvodaca = [ "tag_po_izvodacu.csv" ],
 ##            tagovi_mjesta = [ "tag_po_mjestima.csv" ],
 #            tagovi_vrsta_nositelja = [ "tag_po_vrsti_nositelja.csv" ],
-#            upisni_rok = 'l')
-    upisano_u_prvom_roku(svi_podaci, grupiranje = set([KOLONA_NOSITELJ]))
+            upisni_rok = 'l',
+            ylabel = "Prvi izbor na ljetnom upisnom roku")
+#    upisano_u_prvom_roku(svi_podaci, grupiranje = set([KOLONA_NOSITELJ]))
 
