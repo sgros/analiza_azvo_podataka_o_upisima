@@ -21,23 +21,21 @@ Sljedeći niz grafova pokazuje za svako državno sveučilište broj srednjoškol
 - Dubrovnik, Pula i Zadar dosta loše stoje u odnosu na ostala sveučilišta.
 
 
-<img src="/rezultati/slike/unidu.png" alt="Slika 1" width="50%" />
+<img src="/rezultati/slike/unidu.png" alt="Sveučilište u Dubrovniku" width="50%" align="center" />
 
-![Slika 1](/rezultati/slike/unidu.png)
+<img src="/rezultati/slike/unihk.png" alt="Hrvatsko katoličko sveučilište u Zagrebu" width="50%" align="center" />
 
-![Slika 2](/rezultati/slike/unihk.png)
+<img src="/rezultati/slike/unios.png" alt="Sveučilište u Osijeku" width="50%" align="center" />
 
-![Slika 3](/rezultati/slike/unios.png)
+<img src="/rezultati/slike/unipu.png" alt="Sveučilište u Puli" width="50%" align="center" />
 
-![Slika 4](/rezultati/slike/unipu.png)
+<img src="/rezultati/slike/uniri.png" alt="Sveučilište u Rijeci" width="50%" align="center" />
 
-![Slika 5](/rezultati/slike/uniri.png)
+<img src="/rezultati/slike/unisj.png" alt="Sveučilište Sjever" width="50%" align="center" />
 
-![Slika 6](/rezultati/slike/unisj.png)
+<img src="/rezultati/slike/unist.png" alt="Sveučilište u Splitu" width="50%" align="center" />
 
-![Slika 7](/rezultati/slike/unist.png)
+<img src="/rezultati/slike/unizd.png" alt="Sveučilište u Zadru" width="50%" align="center" />
 
-![Slika 8](/rezultati/slike/unizd.png)
-
-![Slika 9](/rezultati/slike/unizg.png)
+<img src="/rezultati/slike/unizg.png" alt="Sveučilište u Zagrebu" width="50%" align="center" />
 
