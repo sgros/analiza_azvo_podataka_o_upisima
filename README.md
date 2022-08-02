@@ -20,21 +20,21 @@ Sljedeći niz grafova pokazuje za svako državno sveučilište broj srednjoškol
 - zanimljivo je kako je Hrvatsko katoličko sveučilište u Zagrebu traženo.
 - Dubrovnik, Pula i Zadar dosta loše stoje u odnosu na ostala sveučilišta.
 
-![Slika 1](/rezultati/slike/unidu.png){width=50%}
+![Slika 1](/rezultati/slike/unidu.png){ width=50% }
 
-![Slika 2](/rezultati/slike/unihk.png){width=50%}
+![Slika 2](/rezultati/slike/unihk.png){ width=50% }
 
-![Slika 3](/rezultati/slike/unios.png){width=50%}
+![Slika 3](/rezultati/slike/unios.png){ width=50% }
 
-![Slika 4](/rezultati/slike/unipu.png){width=50%}
+![Slika 4](/rezultati/slike/unipu.png){ width=50% }
 
-![Slika 5](/rezultati/slike/uniri.png){width=50%}
+![Slika 5](/rezultati/slike/uniri.png){ width=50% }
 
-![Slika 6](/rezultati/slike/unisj.png){width=50%}
+![Slika 6](/rezultati/slike/unisj.png){ width=50% }
 
-![Slika 7](/rezultati/slike/unist.png){width=50%}
+![Slika 7](/rezultati/slike/unist.png){ width=50% }
 
-![Slika 8](/rezultati/slike/unizd.png){width=50%}
+![Slika 8](/rezultati/slike/unizd.png){ width=50% }
 
-![Slika 9](/rezultati/slike/unizg.png){width=50%}
+![Slika 9](/rezultati/slike/unizg.png){ width=50% }
 
