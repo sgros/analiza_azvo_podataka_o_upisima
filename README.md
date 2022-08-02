@@ -17,24 +17,24 @@ Dakle, puno je pitanja, a malo odgovora!
 
 Sljedeći niz grafova pokazuje za svako državno sveučilište broj srednjoškolaca koji su neki studij s tog sveučilišta stavili kao prvi odabir u ljetnom upisnom roku te je to potom podijeljeno s raspoloživim brojem mjesta. Ono što se može vidjeti iz toga je da državna sveučilišta i dalje dobro kotiraju po pitanju interesa, tj. za jedno mjesto na državnom sveučilištu ima više od jednog kandidata. Ali, primjetan je trend pada zadnjih godina. Što je točno uzrok tome, teško je reći - ipak treba malo dublja analiza. Ono što se ipak može reći, je sljedeće:
 
-- zanimljivo je kako je Hrvatsko katoličo sveučilište u Zagrebu traženo.
+- zanimljivo je kako je Hrvatsko katoličko sveučilište u Zagrebu traženo.
 - Dubrovnik, Pula i Zadar dosta loše stoje u odnosu na ostala sveučilišta.
 
-![Slika 1](/rezultati/slike/unidu.png)
+![Slika 1](/rezultati/slike/unidu.png){width=50%}
 
-![Slika 2](/rezultati/slike/unihk.png)
+![Slika 2](/rezultati/slike/unihk.png){width=50%}
 
-![Slika 3](/rezultati/slike/unios.png)
+![Slika 3](/rezultati/slike/unios.png){width=50%}
 
-![Slika 4](/rezultati/slike/unipu.png)
+![Slika 4](/rezultati/slike/unipu.png){width=50%}
 
-![Slika 5](/rezultati/slike/uniri.png)
+![Slika 5](/rezultati/slike/uniri.png){width=50%}
 
-![Slika 6](/rezultati/slike/unisj.png)
+![Slika 6](/rezultati/slike/unisj.png){width=50%}
 
-![Slika 7](/rezultati/slike/unist.png)
+![Slika 7](/rezultati/slike/unist.png){width=50%}
 
-![Slika 8](/rezultati/slike/unizd.png)
+![Slika 8](/rezultati/slike/unizd.png){width=50%}
 
-![Slika 9](/rezultati/slike/unizg.png)
+![Slika 9](/rezultati/slike/unizg.png){width=50%}
 
