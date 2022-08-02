@@ -9,7 +9,14 @@ Sad kad smo riješili definiciju računarstva, ključna stvar za prvo pitanje je
 
 <img src="/rezultati/slike/racunarstvo/raspoloziva_mjesta-2010-2022.png" alt="Raspoloživa mjesta u računarstvu" width="50%" align="center" />
 
+Gledajući tu sliku, očito je kako broj mjesta na računarstvu raste. Međutim, tu postoje dva anomalna elementa za koje bi trebala malo dublja analiza. Prvi je 2011. godina kada je došlo do pada broja mjesta na računarstvu, i to za oko 500 mjesta - što i nije tako malo?! Drugi element je da je 2020. i 2022. godine došlo do pada broja mjesta za računarstvo. Opet, teško je u ovom trenutku reći zašto je to tako bez dublje analize.
+
 Kako bi se dobio odgovor na drugo pitanje, treba pozbrajati prve izbore za sva računarstva te pogledati rezultate kroz vrijeme. Sljedeća slika je rezultat te operacije:
 
-<img src="/rezultati/slike/racunarstvo/prvi_izbor-2010-2022.png" alt="Raspoloživa mjesta u računarstvu" width="50%" align="center" />
+<img src="/rezultati/slike/racunarstvo/prvi_izbor-2010-2022.png" alt="Prvi izbor računarstva" width="50%" align="center" />
 
+Što se tiče interesa za računarstvo, kao prvi odabir konstantno raste tijekom godina. Od 2017. je primjetan lagani pad što se _možda_ može pripisati padu populacije.
+
+Međutim, posebno je zanimljiv graf s ukupnim brojem prijava! U njemu je vidljivo da je 2010. godine bio značajan broj prijava na računarstvo, ali da je 2011., i posebno 2012. godine taj broj značajno pao! Sada smo opet u periodu porasta interesa, ali još nije dostignut maksimum iz 2010. godine te vrijednosti iz 2011. godine i 2017. godine.
+
+<img src="/rezultati/slike/racunarstvo/ukupan_broj_prijava-2010-2022.png" alt="Ukupan izbor računarstva" width="50%" align="center" />

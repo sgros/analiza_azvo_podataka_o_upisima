@@ -409,12 +409,12 @@ if __name__ == '__main__':
     #jedinstveno_mjesto(svi_podaci, True)
     #jedinstvena_vrsta_nositelja(svi_podaci, True)
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
-            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
+            kolona_za_statistiku = KOLONA_BROJ_PRIJAVA,
             tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
 ##            tagovi_izvodaca = [ "tag_po_izvodacu.csv" ],
 ##            tagovi_mjesta = [ "tag_po_mjestima.csv" ],
 #            tagovi_vrsta_nositelja = [ "tag_po_vrsti_nositelja.csv" ],
             upisni_rok = 'l',
-            ylabel = "Prvi izbor na ljetnom upisnom roku")
+            ylabel = "Ukupan broj prijava na ljetnom upisnom roku")
 #    upisano_u_prvom_roku(svi_podaci, grupiranje = set([KOLONA_NOSITELJ]))
 
