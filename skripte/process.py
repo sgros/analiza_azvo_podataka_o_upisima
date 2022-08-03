@@ -109,65 +109,60 @@ def ucitaj_sve_datoteke(write_data_to_file = True):
 
     return svi_podaci
 
+def __jedinstveni_podaci(svi_podaci, kolona, tekst, write_data_to_file = None):
+    """
+    Parametrizirana metoda koja generira jedinstvene podatke u nekom stupcu.
+    """
+
+    jedinstveni_podaci = set()
+
+    for e in svi_podaci:
+        podatak = e[kolona].strip()
+        jedinstveni_podaci.add(podatak)
+
+    print("{}: {}".format(tekst, len(nositelji)))
+
+    if write_data_to_file:
+        with open(TEMP_DATA_DIR + write_data_to_file, 'w') as f:
+            for e in jedinstveni_podaci:
+#                f.write(str(e) + '\n')
+                f.write(str(e) + '\t' + str(e) + '\n')
+
+def jedinstveni_nositelji(svi_podaci, write_data_to_file = False):
+    """
+    Metoda koja trazi jedinstvene nositelje studija.
+    """
+    if write_data_to_file:
+        return __jedinstveni_podaci(svi_podaci, KOLONA_NOSITELJ, "Ukupno nositelja", write_data_to_file = 'nositelji.data')
+    else:
+        return __jedinstveni_podaci(svi_podaci, KOLONA_NOSITELJ, "Ukupno nositelja")
+
 def jedinstveno_mjesto(svi_podaci, write_data_to_file = False):
     """
     Metoda koja trazi jedinstvena mjesta u kojima se provodi studij.
     """
-
-    mjesta = set()
-
-    for e in svi_podaci:
-        mjesto = e[KOLONA_MJESTO].strip()
-        mjesta.add(mjesto)
-
-    print("Ukupno mjesta: {}".format(len(mjesta)))
-
     if write_data_to_file:
-
-        with open(TEMP_DATA_DIR + 'mjesta.data', 'w') as f:
-            for e in mjesta:
-#                f.write(str(e) + '\n')
-                f.write(str(e) + '\t' + str(e) + '\n')
+        return __jedinstveni_podaci(svi_podaci, KOLONA_MJESTO, "Ukupno mjesta", write_data_to_file = 'mjesta.data')
+    else:
+        return __jedinstveni_podaci(svi_podaci, KOLONA_MJESTO, "Ukupno mjesta")
 
 def jedinstvena_vrsta_nositelja(svi_podaci, write_data_to_file = False):
     """
     Metoda koja trazi jedinstvene vrste nositelja.
     """
-
-    vrste_nositelja = set()
-
-    for e in svi_podaci:
-        vn = e[KOLONA_VRSTA_NOSITELJA].strip()
-        vrste_nositelja.add(vn)
-
-    print("Ukupno vrsta nositelja: {}".format(len(vrste_nositelja)))
-
     if write_data_to_file:
-
-        with open(TEMP_DATA_DIR + 'vrste_nositelja.data', 'w') as f:
-            for e in vrste_nositelja:
-                f.write(str(e) + '\t' + str(e) + '\n')
-#                f.write(str(e) + '\n')
+        return __jedinstveni_podaci(svi_podaci, KOLONA_VRSTA_NOSITELJA, "Ukupno vrsta nositelja", write_data_to_file = 'vrste_nositelja.data')
+    else:
+        return __jedinstveni_podaci(svi_podaci, KOLONA_VRSTA_NOSITELJA, "Ukupno vrsta nositelja")
 
 def jedinstveni_izvodaci(svi_podaci, write_data_to_file = False):
     """
     Metoda koja trazi jedinstvene izvodace.
     """
-
-    izvodaci = set()
-
-    for e in svi_podaci:
-        izvodac = e[KOLONA_IZVODAC].strip()
-        izvodaci.add(izvodac)
-
-    print("Ukupno izvodaca: {}".format(len(izvodaci)))
-
     if write_data_to_file:
-
-        with open(TEMP_DATA_DIR + 'izvodaci.data', 'w') as f:
-            for e in izvodaci:
-#                f.write(str(e) + '\t' + str(e) + '\n')
-                f.write(str(e) + '\n')
+        return __jedinstveni_podaci(svi_podaci, KOLONA_IZVODAC, "Ukupno izvodaca", write_data_to_file = 'izvodaci.data')
+    else:
+        return __jedinstveni_podaci(svi_podaci, KOLONA_IZVODAC, "Ukupno izvodaca")
 
 def jedinstveni_tipovi_studija(svi_podaci, write_data_to_file = False):
     """
@@ -232,11 +227,15 @@ def _ucitaj_tagove(tag_datoteka):
 
     return tagovi
 
-def _tagiraj_podatke(svi_podaci, kolona_za_tagiranje, datoteke_tagova = None, prepisi_tag = False, write_data_to_file = False):
+def _tagiraj_podatke(svi_podaci, kolona_za_tagiranje, datoteke_tagova = None, jedinstvena_oznaka = False, write_data_to_file = False):
 
+    # Ako nam nije proslijedena datoteka tagova, a nije ni kraj tagiranja,
+    # onda izaci van...
     if kolona_za_tagiranje != FINISH and (datoteke_tagova is None or len(datoteke_tagova) == 0):
         return svi_podaci
 
+    # Ako se trazi kraj tagiranja, onda treba provjeriti koji su zapisi
+    # neoznaceni i dodati nepoznatu oznaku tako da svi budu uniformni.
     if kolona_za_tagiranje == FINISH:
         for e in svi_podaci:
             if len(e) == 14:
@@ -244,20 +243,21 @@ def _tagiraj_podatke(svi_podaci, kolona_za_tagiranje, datoteke_tagova = None, pr
 
         return svi_podaci
 
+    # Slijedi oznacavanje...
     for dat in datoteke_tagova:
 
         tagovi = _ucitaj_tagove(dat)
 
         for e in svi_podaci:
 
-            if len(e) == 15 and not prepisi_tag:
+            if len(e) == 15 and jedinstvena_oznaka:
                 continue
 
             for t in tagovi:
                 if e[kolona_za_tagiranje].lower().find(t[0]) > -1:
                     if len(t) == 2 and len(t[1]) > 0:
                         if len(e) == 15:
-                            e[KOLONA_TAG] = t[1]
+                            e[KOLONA_TAG] = "{},{}".format(e[KOLONA_TAG], t[1])
                         else:
                             e.append(t[1])
                         break
@@ -408,12 +408,13 @@ if __name__ == '__main__':
     #jedinstveni_izvodaci(svi_podaci, True)
     #jedinstveno_mjesto(svi_podaci, True)
     #jedinstvena_vrsta_nositelja(svi_podaci, True)
+    #jedinstveni_nositelji(svi_podaci, True)
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
-            kolona_za_statistiku = KOLONA_BROJ_PRIJAVA,
-            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
-##            tagovi_izvodaca = [ "tag_po_izvodacu.csv" ],
-##            tagovi_mjesta = [ "tag_po_mjestima.csv" ],
-#            tagovi_vrsta_nositelja = [ "tag_po_vrsti_nositelja.csv" ],
+            kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
+#            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
+##            tagovi_izvodaca = [ "mapiranje_tagova/tag_po_izvodacu.csv" ],
+            tagovi_mjesta = [ "mapiranje_tagova/tag_po_mjestima.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/javni_vs_privatni.csv" ],
             upisni_rok = 'l',
             ylabel = "Ukupan broj prijava na ljetnom upisnom roku")
 #    upisano_u_prvom_roku(svi_podaci, grupiranje = set([KOLONA_NOSITELJ]))

@@ -9,7 +9,7 @@ Sad kad smo riješili definiciju računarstva, ključna stvar za prvo pitanje je
 
 <img src="/rezultati/slike/racunarstvo/raspoloziva_mjesta-2010-2022.png" alt="Raspoloživa mjesta u računarstvu" width="50%" align="center" />
 
-Gledajući tu sliku, očito je kako broj mjesta na računarstvu raste. Međutim, tu postoje dva anomalna elementa za koje bi trebala malo dublja analiza. Prvi je 2011. godina kada je došlo do pada broja mjesta na računarstvu, i to za oko 500 mjesta - što i nije tako malo?! Drugi element je da je 2020. i 2022. godine došlo do pada broja mjesta za računarstvo. Opet, teško je u ovom trenutku reći zašto je to tako bez dublje analize.
+Gledajući tu sliku, očito je kako broj mjesta na računarstvu raste. Međutim, tu postoje dva anomalna elementa za koje bi trebala malo dublja analiza. Prvi je 2011. godina kada je došlo do pada broja mjesta na računarstvu, i to za oko 500 mjesta - što i nije tako malo?! Drugi element je da je 2020. i 2022. godine došlo do pada broja mjesta za računarstvo. Opet, teško je u ovom trenutku reći zašto je to tako bez dublje analize. Za 2011. godinu može se pretpostaviti da je to trenutak kada je Hrvatska ušla u recesiju(?) zbog krize koja je krenula 2008. godine iz SAD-a. Da bi se to potvrdilo, treba pronaći odgovarajuće podatke koji to potvrđuju - primjerice, rast nezaposlenosti, pad BDP-a.
 
 Kako bi se dobio odgovor na drugo pitanje, treba pozbrajati prve izbore za sva računarstva te pogledati rezultate kroz vrijeme. Sljedeća slika je rezultat te operacije:
 
@@ -20,3 +20,5 @@ Kako bi se dobio odgovor na drugo pitanje, treba pozbrajati prve izbore za sva r
 Međutim, posebno je zanimljiv graf s ukupnim brojem prijava! U njemu je vidljivo da je 2010. godine bio značajan broj prijava na računarstvo, ali da je 2011., i posebno 2012. godine taj broj značajno pao! Sada smo opet u periodu porasta interesa, ali još nije dostignut maksimum iz 2010. godine te vrijednosti iz 2011. godine i 2017. godine.
 
 <img src="/rezultati/slike/racunarstvo/ukupan_broj_prijava-2010-2022.png" alt="Ukupan izbor računarstva" width="50%" align="center" />
+
+Čini se, ovako na prvu, da je kriza 2010. godine značajno utjecala na obrazovni sustav u HR.
