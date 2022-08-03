@@ -9,6 +9,7 @@ Je li i vama dosadilo svake godine čitati jedne te iste stvari vezane za upise 
 - što se dešava s ponudama studija na Engleskom jeziku? Ima li potražnje? Raste li potražnja i koliko?
 - što se dešava s redovnim i izvanrednim studijima, posebno u računarstvu gdje su već svi zaposleni?
 - koliko je studija po pojedinim gradovima?
+- [Što se dešava sa stručnim studijima na sveučilištima?](/rezultati/sveucilisni_strucni.md)
 
 Pri tome, treba uzeti u obzir da populacija HR pada što može stvoriti dojam da, primjerice, studijima pada interes. Treba biti oprezan oko takvih stvari.
 

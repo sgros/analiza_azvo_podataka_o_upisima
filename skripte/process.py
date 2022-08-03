@@ -403,26 +403,8 @@ def upisano_u_prvom_roku(svi_podaci, grupiranje = set(range(KOLONA_NOSITELJ, KOL
         plt.ylabel('Omjer prvog odabira i ukupnog broja mjesta [%]')
         plt.title(key1)
         plt.show()
-        
-if __name__ == '__main__':
-    #jedinstveni_tipovi_studija(svi_podaci, True)
-    #jedinstveni_izvodaci(svi_podaci, True)
-    #jedinstveno_mjesto(svi_podaci, True)
-    #jedinstvena_vrsta_nositelja(svi_podaci, True)
-    #jedinstveni_nositelji(svi_podaci, True)
 
-#    svi_podaci = ucitaj_sve_datoteke()
-#    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
-#            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
-##            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
-#            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
-##            tagovi_izvodaca = [ "mapiranje_tagova/tag_po_izvodacu.csv" ],
-##            tagovi_mjesta = [ "mapiranje_tagova/tag_po_mjestima.csv" ],
-##            tagovi_vrsta_nositelja = [ "mapiranje_tagova/javni_vs_privatni.csv" ],
-#            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
-##            tagovi_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
-#            upisni_rok = 'j',
-#            ylabel = "Ukupan broj mjesta na ljetnom upisnom roku")
+def sveucilista_vs_veleucilista():
 
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
@@ -465,6 +447,91 @@ if __name__ == '__main__':
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'j',
             ylabel = "Ostvarilo pravo upisa na jesenskom upisnom roku")
+
+def sveucilista_strucni_studij():
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij_tag.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'l',
+            ylabel = "Ukupan broj mjesta na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij_tag.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'l',
+            ylabel = "Broj prvih izbora na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij_tag.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'l',
+            ylabel = "Ostvarilo pravo upisa na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij_tag.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'j',
+            ylabel = "Ukupan broj mjesta na jesenskom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij_tag.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'j',
+            ylabel = "Broj prvih izbora na jesenskom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij_tag.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'j',
+            ylabel = "Ostvarilo pravo upisa na jesenskom upisnom roku")
+
+if __name__ == '__main__':
+    sveucilista_strucni_studij()
+    exit(1)
+        
+if __name__ == '__main__':
+    sveucilista_strucni_studij()
+    exit(1)
+        
+if __name__ == '__main__':
+    sveucilista_strucni_studij()
+    exit(1)
+        
+if __name__ == '__main__':
+    sveucilista_strucni_studij()
+    exit(1)
+
+    #jedinstveni_tipovi_studija(svi_podaci, True)
+    #jedinstveni_izvodaci(svi_podaci, True)
+    #jedinstveno_mjesto(svi_podaci, True)
+    #jedinstvena_vrsta_nositelja(svi_podaci, True)
+    #jedinstveni_nositelji(svi_podaci, True)
+
+#    svi_podaci = ucitaj_sve_datoteke()
+#    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+#            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+##            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
+#            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+##            tagovi_izvodaca = [ "mapiranje_tagova/tag_po_izvodacu.csv" ],
+##            tagovi_mjesta = [ "mapiranje_tagova/tag_po_mjestima.csv" ],
+##            tagovi_vrsta_nositelja = [ "mapiranje_tagova/javni_vs_privatni.csv" ],
+#            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+##            tagovi_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+#            upisni_rok = 'j',
+#            ylabel = "Ukupan broj mjesta na ljetnom upisnom roku")
 
 #    upisano_u_prvom_roku(svi_podaci, grupiranje = set([KOLONA_NOSITELJ]))
 
