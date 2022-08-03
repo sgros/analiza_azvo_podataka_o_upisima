@@ -254,7 +254,7 @@ def _tagiraj_podatke(svi_podaci, kolona_za_tagiranje, datoteke_tagova = None, je
                 continue
 
             for t in tagovi:
-                if e[kolona_za_tagiranje].lower().find(t[0]) > -1:
+                if e[kolona_za_tagiranje].lower().find(t[0].lower()) > -1:
                     if len(t) == 2 and len(t[1]) > 0:
                         if len(e) == 15:
                             e[KOLONA_TAG] = "{},{}".format(e[KOLONA_TAG], t[1])
@@ -276,6 +276,7 @@ def suma_kolona_po_tagovima_i_po_godinama(svi_podaci,
         tagovi_izvodaca = None,
         tagovi_mjesta = None,
         tagovi_vrsta_nositelja = None,
+        tagovi_nositelja = None,
         upisni_rok = 'l',
         xlabel = "Godina",
         ylabel = ""):
@@ -299,6 +300,7 @@ def suma_kolona_po_tagovima_i_po_godinama(svi_podaci,
     svi_podaci = _tagiraj_podatke(svi_podaci, KOLONA_STUDIJ, tagovi_studija)
     svi_podaci = _tagiraj_podatke(svi_podaci, KOLONA_MJESTO, tagovi_mjesta)
     svi_podaci = _tagiraj_podatke(svi_podaci, KOLONA_VRSTA_NOSITELJA, tagovi_vrsta_nositelja)
+    svi_podaci = _tagiraj_podatke(svi_podaci, KOLONA_NOSITELJ, tagovi_nositelja)
     svi_podaci = _tagiraj_podatke(svi_podaci, FINISH)
 
     po_tagovima = {}
@@ -403,19 +405,72 @@ def upisano_u_prvom_roku(svi_podaci, grupiranje = set(range(KOLONA_NOSITELJ, KOL
         plt.show()
         
 if __name__ == '__main__':
-    svi_podaci = ucitaj_sve_datoteke()
     #jedinstveni_tipovi_studija(svi_podaci, True)
     #jedinstveni_izvodaci(svi_podaci, True)
     #jedinstveno_mjesto(svi_podaci, True)
     #jedinstvena_vrsta_nositelja(svi_podaci, True)
     #jedinstveni_nositelji(svi_podaci, True)
+
+#    svi_podaci = ucitaj_sve_datoteke()
+#    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+#            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+##            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
+#            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+##            tagovi_izvodaca = [ "mapiranje_tagova/tag_po_izvodacu.csv" ],
+##            tagovi_mjesta = [ "mapiranje_tagova/tag_po_mjestima.csv" ],
+##            tagovi_vrsta_nositelja = [ "mapiranje_tagova/javni_vs_privatni.csv" ],
+#            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+##            tagovi_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+#            upisni_rok = 'j',
+#            ylabel = "Ukupan broj mjesta na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'l',
+            ylabel = "Ukupan broj mjesta na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'j',
+            ylabel = "Ukupan broj mjesta na jesenskom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'l',
+            ylabel = "Broj prvih izbora na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_PRVI_IZBOR,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'j',
+            ylabel = "Broj prvih izbora na jesenskom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
-#            tagovi_studija = [ "mapiranje_tagova/racunarstvo_po_studijima.csv" ],
-##            tagovi_izvodaca = [ "mapiranje_tagova/tag_po_izvodacu.csv" ],
-            tagovi_mjesta = [ "mapiranje_tagova/tag_po_mjestima.csv" ],
-            tagovi_vrsta_nositelja = [ "mapiranje_tagova/javni_vs_privatni.csv" ],
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'l',
-            ylabel = "Ukupan broj prijava na ljetnom upisnom roku")
+            ylabel = "Ostvarilo pravo upisa na ljetnom upisnom roku")
+
+    svi_podaci = ucitaj_sve_datoteke()
+    suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
+            kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
+            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
+            tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
+            upisni_rok = 'j',
+            ylabel = "Ostvarilo pravo upisa na jesenskom upisnom roku")
+
 #    upisano_u_prvom_roku(svi_podaci, grupiranje = set([KOLONA_NOSITELJ]))
 

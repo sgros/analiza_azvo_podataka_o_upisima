@@ -1,7 +1,8 @@
 Je li i vama dosadilo svake godine čitati jedne te iste stvari vezane za upise na fakultete, veleučilišta, itd.? Svake godine ista stvar, omjer broja onih koji su odabrali nešto i ukupnog broja koji se prima, i manje/više, to je to. Postoji još nekakvih statistika, ali sve to je jednostavno premalo i, u osnovi, neinteresantno. Razlog je što se ne mogu uočiti nikakvi trendovi, niti se mogu dobiti odgovori na vrlo zanimljiva pitanja. Recimo, mene "muče" sljedeća pitanja:
 
-- [raste li ponuda studija na temu računarstva u HR, i kojim tempom?](/rezultati/racunarstvo.md)
-- [vezano uz prethodnu točku, pitanje je raste li i potražnja, tj. da li sve više srednjoškolaca upisuje nešto vezano uz računarstvo, odnosno, općenito uz IT?](/rezultati/racunarstvo.md)
+- [Raste li ponuda studija na temu računarstva u HR, i kojim tempom?](/rezultati/racunarstvo.md)
+- [Vezano uz prethodnu točku, pitanje je raste li i potražnja, tj. da li sve više srednjoškolaca upisuje nešto vezano uz računarstvo, odnosno, općenito uz IT?](/rezultati/racunarstvo.md)
+- [Koliko mjesta nude sveučilišta, a koliko veleučilišta i više škole te kako im se ta mjesta popunjavanju?](/rezultati/sveucilista_vs_veleucilista.md)
 - da li privatnici povećavaju broj mjesta, ili smanjuju?
 - općenito, kakav je trend mjesta koji se nude na privatnim učilištima? Ovo pitanje je bitno jer bi se očekivalo da se privatnici bolje prilagođavaju treutnoj potražnji jer moraju smanjivati troškove. Državne institucije, s druge strane, vjerojatno su tromije, a i sigurnije!
 - u tablicama piše koliko studenata je ostvarilo pravo upisa određenog studija, međutim, upišu li doista svi?
