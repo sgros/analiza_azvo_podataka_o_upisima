@@ -9,6 +9,8 @@ Filtrirati podatke na taj način je vrlo jednostavno te se potom dobijaju sljede
 
 ### Ukupno mjesta
 
+Gledajući graf ukupnog broja mjesta jasno je vidljiv porast stručnih studija na sveučilištima. U 10 godina on je udvostručen. Jedan razlog za to može biti što su neka veleučilišta prešla u sveučilišta, a vjerojatno i dalje nude stručne studije. Međutim, bez obzira na to, raste broj mjesta na stručnim studijima. Bilo bi zanimljivo vidjeti koje sveučilište ima najveći broj mjesta na stručnim studijima...
+
 <img src="/rezultati/slike/sveucilisni_strucni/ukupno_mjesta-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ### Prvi izbor
@@ -16,6 +18,8 @@ Filtrirati podatke na taj način je vrlo jednostavno te se potom dobijaju sljede
 <img src="/rezultati/slike/sveucilisni_strucni/prvi_izbor-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ### Ostvarilo pravo upisa
+
+Prilično je jasno kako broj onih koji su ostvarili pravo upisa je 50% raspoloživog kapaciteta.
 
 <img src="/rezultati/slike/sveucilisni_strucni/ostvarilo_pravo_upisa-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
 
