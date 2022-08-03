@@ -9,29 +9,29 @@ Filtrirati podatke na taj način je vrlo jednostavno te se potom dobijaju sljede
 
 ### Ukupno mjesta
 
-<img srce="/rezultati/slike/sveucilisni_strucni/ukupno_mjesta-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
+<img src="/rezultati/slike/sveucilisni_strucni/ukupno_mjesta-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ### Prvi izbor
 
-<img srce="/rezultati/slike/sveucilisni_strucni/prvi_izbor-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
+<img src="/rezultati/slike/sveucilisni_strucni/prvi_izbor-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ### Ostvarilo pravo upisa
 
-<img srce="/rezultati/slike/sveucilisni_strucni/ostvarilo_pravo_upisa-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
+<img src="/rezultati/slike/sveucilisni_strucni/ostvarilo_pravo_upisa-ljetni-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ## Jesenski upisni rok
 
 ### Ukupno mjesta
 
-<img srce="/rezultati/slike/sveucilisni_strucni/ukupno_mjesta-jesenski-rok-2010-2022.png" width="50%" align="center" alt="" />
+<img src="/rezultati/slike/sveucilisni_strucni/ukupno_mjesta-jesenski-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ### Prvi izbor
 
-<img srce="/rezultati/slike/sveucilisni_strucni/prvi_izbor-jesenski-rok-2010-2022.png" width="50%" align="center" alt="" />
+<img src="/rezultati/slike/sveucilisni_strucni/prvi_izbor-jesenski-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 ### Ostvarilo pravo upisa
 
-<img srce="/rezultati/slike/sveucilisni_strucni/ostvarilo_pravo_upisa-jesenski-rok-2010-2022.png" width="50%" align="center" alt="" />
+<img src="/rezultati/slike/sveucilisni_strucni/ostvarilo_pravo_upisa-jesenski-rok-2010-2022.png" width="50%" align="center" alt="" />
 
 
 # Diskusija
