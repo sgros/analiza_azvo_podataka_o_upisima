@@ -427,7 +427,6 @@ if __name__ == '__main__':
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
-            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'l',
             ylabel = "Ukupan broj mjesta na ljetnom upisnom roku")
@@ -435,7 +434,6 @@ if __name__ == '__main__':
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_UPISNA_KVOTA,
-            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'j',
             ylabel = "Ukupan broj mjesta na jesenskom upisnom roku")
@@ -443,7 +441,6 @@ if __name__ == '__main__':
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_PRVI_IZBOR,
-            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'l',
             ylabel = "Broj prvih izbora na ljetnom upisnom roku")
@@ -451,7 +448,6 @@ if __name__ == '__main__':
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_PRVI_IZBOR,
-            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'j',
             ylabel = "Broj prvih izbora na jesenskom upisnom roku")
@@ -459,7 +455,6 @@ if __name__ == '__main__':
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
-            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'l',
             ylabel = "Ostvarilo pravo upisa na ljetnom upisnom roku")
@@ -467,7 +462,6 @@ if __name__ == '__main__':
     svi_podaci = ucitaj_sve_datoteke()
     suma_kolona_po_tagovima_i_po_godinama(svi_podaci, 
             kolona_za_statistiku = KOLONA_OSTVARILO_PRAVO_UPISA,
-            tagovi_studija = [ "mapiranje_tagova/strucni_studij.csv" ],
             tagovi_vrsta_nositelja = [ "mapiranje_tagova/veleucilista_vs_sveucilista.csv" ],
             upisni_rok = 'j',
             ylabel = "Ostvarilo pravo upisa na jesenskom upisnom roku")
